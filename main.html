@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Namcutes1234 - My projects</title>
+  <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .download-btn {
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .contact-section {
+            background-color: #f0f4ff;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            font-family: 'Segoe UI', sans-serif;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .contact-section p {
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .contact-section ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .contact-section li {
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: #444;
+    }
+
+    .contact-section a {
+        color: #007BFF;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .contact-section a:hover {
+        text-decoration: underline;
+    }
+
+    .contact-section li::before {
+        content: "📎 ";
+    }
+  </style>
+</head>
+<body>
+    <h2>📚 Web donwload apk/aia file (for Android)</h2>
+    <button class="download-btn" onclick="downloadFromDrive('1w46mBWGj-AHLLcZE5MjFMvNPIT7zC7Mb', 'Rac_test.aia')">
+        Download Rac_test.aia
+    </button>
+    <button class="download-btn" onclick="downloadFromDrive('14tWuxeiz9-Gt7anSBW40YAOfCuziMv6E', 'Rac_test.apk')">
+        Download Rac_test.apk
+    </button>
+    <script>
+        function downloadFromDrive(fileId, fileName) {
+            const directLink = `https://drive.google.com/uc?export=download&id=${fileId}`;
+            const a = document.createElement('a');
+            a.href = directLink;
+            a.download = fileName;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+    </script>
+    <hr>
+    <div class="contact-section">
+        <p>📬 Contact me:</p>
+        <ul>
+            <li>Email: <a href="mailto:nam5a7nth@gmail.com">nam5a7nth@gmail.com</a></li>
+            <li>LQDOJ: <a href="https://lqdoj.edu.vn/user/NamTHCSNQ" target="_blank">NamTHCSNQ</a></li>
+            <li>Virtual Judge: <a href="https://vjudge.net/user/NamH" target="_blank">NamH</a></li>
+            <li>Scratch: <a href="https://scratch.mit.edu/users/Namcutes1234/" target="_blank">Namcutes1234</a></li>
+        </ul>
+    </div>
+    <hr>
+    <footer>Copyright (C) 2025 by Namcutes1234. All right reserved.</footer>
+</body>
+</html>
